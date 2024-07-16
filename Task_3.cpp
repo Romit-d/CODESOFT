@@ -117,7 +117,7 @@ int main()
     cout<<"               ---|---|---"<<endl;
     cout<<"                7 | 8 | 9"<<endl;
     cout<<"3. The first player uses 'X' and the second player uses 'O'."<<endl;
-    cout<<"4. A player wins by getting three of their symbols in a row, column, or diagonal."<<endl;
+    cout<<"4. A player wins by getting three symbols in a row, column, or diagonal."<<endl;
     cout<<"5. If all cells are filled and no player has won, the game is a draw."<<endl;
     cout<<"6. After the game ends, you can choose to play again by entering 'Y' or 'y'."<<endl<<endl;
     cout<<"------------------------------------------------------------------------------------------------"<<endl;
@@ -129,6 +129,7 @@ int main()
         play(board);
         cout<<"Do you want to play again - ";
         cin>>input;
+        cout<<endl;
         cin.ignore();
     }while (input == 'Y' || input == 'y'); 
 }
